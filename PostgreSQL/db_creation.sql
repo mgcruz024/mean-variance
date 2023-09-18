@@ -74,9 +74,9 @@ ALTER TABLE public.eod_indices
 -- Check
 SELECT * FROM eod_indices LIMIT 10;
 
--------------------------------------------------------------------------
----------------- Create a custom trading day calendar  ------------------
--------------------------------------------------------------------------
+-----------------------------------------------------------------------------------
+---------------- Create and upload a custom trading day calendar  ------------------
+------------------------------------------------------------------------------------
 /*
 LIFELINE:
 -- DROP TABLE public.custom_calendar;
@@ -114,7 +114,6 @@ ALTER TABLE public.custom_calendar
 -- CHECK:
 SELECT * FROM custom_calendar LIMIT 10;
 
--- Now let's populate these columns
 -- Identify trading days
 SELECT * FROM custom_calendar WHERE trading=1;
 -- Identify previous trading days via a nested query
@@ -157,10 +156,8 @@ CREATE USER stockmarketreader WITH
 	PASSWORD 'read123';
 */
 
--- Grant read rights (on existing tables and views)
 GRANT SELECT ON ALL TABLES IN SCHEMA public TO stockmarketreader;
 
--- Grant read rights (for future tables and views)
 ALTER DEFAULT PRIVILEGES IN SCHEMA public
    GRANT SELECT ON TABLES TO stockmarketreader;
 
