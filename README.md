@@ -1,5 +1,5 @@
 # Mean-Variance Portfolio Optimization With Tensorflow
-<img src="Screenshots/stocks_image.png" width="1010" height="292" />
+<img src="Screenshots/stocks_image.png" width="850" height="292" />
 
 
 
