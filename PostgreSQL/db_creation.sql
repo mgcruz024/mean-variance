@@ -1,9 +1,4 @@
 
-
---------------------------------------------------------------
--- First, create a database "mvportfolio" under "Databases" --
---------------------------------------------------------------
-
 ----------------------------------------------------------
 ----------------- Import EOD (End of Day) Quotes ---------
 ----------------------------------------------------------
@@ -31,16 +26,15 @@ TABLESPACE pg_default;
 ALTER TABLE public.eod_quotes
     OWNER to postgres;
 */
--- Import eod.csv to the table - it will take some time (approx. 17 million rows)
 
--- Check!
+-- Check
 SELECT * FROM eod_quotes LIMIT 10;
-SELECT COUNT(*) FROM eod_quotes; -- this will take some time the first time; should be 16,891,814
-SELECT MIN(date), MAX(date) FROM eod_quotes; -- Make sure that this covers the date range needed for the project 01/01/2016 - 03/26/2021
+SELECT COUNT(*) FROM eod_quotes; 
+SELECT MIN(date), MAX(date) FROM eod_quotes; -- Project date range 01/01/2016 - 03/26/2021
 
 
 -------------------------------------------------------------------------
--- We have stock quotes but we could also use daily index data ----------
+------------------ Import daily index data ------------------------------
 -------------------------------------------------------------------------
 
 /*
@@ -75,7 +69,7 @@ ALTER TABLE public.eod_indices
 SELECT * FROM eod_indices LIMIT 10;
 
 -----------------------------------------------------------------------------------
----------------- Create and upload a custom trading day calendar  ------------------
+---------------- Create and upload custom trading day calendar  ------------------
 ------------------------------------------------------------------------------------
 /*
 LIFELINE:
@@ -102,7 +96,7 @@ ALTER TABLE public.custom_calendar
 -- CHECK:
 SELECT * FROM custom_calendar LIMIT 10;
 
--- Let's add a column to be used later: prev_trading_day
+-- Creating a column to be used later: prev_trading_day
 /*
 -- LIFELINE
 ALTER TABLE public.custom_calendar
@@ -127,7 +121,7 @@ FROM (SELECT date, (SELECT MAX(CC.date) FROM custom_calendar CC WHERE CC.trading
 WHERE custom_calendar.date = PTD.date;
 -- CHECK
 SELECT * FROM custom_calendar ORDER BY date;
--- We could really use the last trading day of 2015 as the end of the month)
+-- Add the last trading day of 2015 as the end of the month
 INSERT INTO custom_calendar VALUES('2015-12-31',2015,12,31,'Thu',1,1,NULL);
 -- Re-run the update
 -- CHECK again
