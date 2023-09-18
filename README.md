@@ -5,11 +5,16 @@
 
 
 
-# ETL Process
-
-<img src="https://github.com/user/repo/blob/master/Screenshots/output.png" width="1010" height="292" />
 
 
 
 
-# Packages Used
+
+## ETL 
+
+<img src="Screenshots/etl_process.png" width="1010" height="292" />
+
+
+
+
+## Packages Used
