@@ -118,10 +118,7 @@ eod_ret[1:10,1:3] #first 10 rows and first 3 columns
 ncol(eod_ret)
 nrow(eod_ret)
 
-#YOUR TURN: subset eom_ret data
 
-# Export data from R to CSV -----------------------------------------------
-write.csv(eod_ret,'C:/temp/eod_ret.csv')
 
 # You can actually open this file in Excel!
 
