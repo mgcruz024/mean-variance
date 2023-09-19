@@ -1,4 +1,4 @@
-# Mean-Variance Portfolio Optimization for SP500 stocks (2016-2021)
+# Mean-Variance Portfolio Optimization for SP500 stocks
 <img src="Screenshots/stocks_image.png" width="500" height="400" />
 
 Mean-Variance (MV) portfolio optimization with six years of daily SP500 data from 2016-2020 and Q1 2021 for testing. Analysis done on R using extracted Yahoo finance data stored in PostgreSQL.
