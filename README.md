@@ -26,6 +26,9 @@ ETL initialized using three different datasets from PostgreSQL:
 - daily_prices_2016_2021- SP500 end of day quotes.
 - eod_indices_2016_2021- SP500TR end of day quotes.
 
+Transformation
+- Percentage of completeness (>= 99%) and outlier removal (daily return > 100%) enforced to assure data quality. 
+- Imputed missing data items with the previous date's data. Up to three in a row were allowed to be imputed.
 
 ## Optimization 
 <img src="Screenshots/portfolio.png" width="700" height="425" />
