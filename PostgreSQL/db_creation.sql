@@ -69,7 +69,7 @@ ALTER TABLE public.eod_indices
 SELECT * FROM eod_indices LIMIT 10;
 
 -----------------------------------------------------------------------------------
----------------- Create and upload custom trading day calendar  ------------------
+---------------- Create and upload a custom trading day calendar  ------------------
 ------------------------------------------------------------------------------------
 /*
 LIFELINE:
