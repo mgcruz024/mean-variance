@@ -131,15 +131,15 @@ SELECT * FROM custom_calendar ORDER BY date;
 -------------------------------------------
 -- Create a role for the database  --------
 -------------------------------------------
--- rolename: stockmarketreader
--- password: read123
+-- rolename: rolename
+-- password: password
 
 /*
 -- LIFELINE:
--- REVOKE ALL PRIVILEGES ON ALL TABLES IN SCHEMA public FROM stockmarketreader;
--- DROP USER stockmarketreader;
+-- REVOKE ALL PRIVILEGES ON ALL TABLES IN SCHEMA public FROM rolename;
+-- DROP USER rolename;
 
-CREATE USER stockmarketreader WITH
+CREATE USER rolename WITH
 	LOGIN
 	NOSUPERUSER
 	NOCREATEDB
@@ -147,11 +147,11 @@ CREATE USER stockmarketreader WITH
 	INHERIT
 	NOREPLICATION
 	CONNECTION LIMIT -1
-	PASSWORD 'read123';
+	PASSWORD 'password';
 */
 
-GRANT SELECT ON ALL TABLES IN SCHEMA public TO stockmarketreader;
+GRANT SELECT ON ALL TABLES IN SCHEMA public TO rolename;
 
 ALTER DEFAULT PRIVILEGES IN SCHEMA public
-   GRANT SELECT ON TABLES TO stockmarketreader;
+   GRANT SELECT ON TABLES TO rolename;
 
