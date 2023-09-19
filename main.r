@@ -5,7 +5,7 @@ rm(list=ls(all=T)) # this just removes everything from memory
 require(RPostgres) 
 require(DBI)
 conn <- dbConnect(RPostgres::Postgres()
-                 ,user="user"
+                 ,user="rolename"
                  ,password="password"
                  ,host="local_host"
                  ,port= local_port
