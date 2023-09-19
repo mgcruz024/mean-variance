@@ -37,6 +37,9 @@ Optimization uses the minimum acceptable return of the SP500TR index for the 201
 
 The sum of portfolio ticker weights are always equal to 1. 
 
+<img src="Screenshots/annualized_returns.png" width="700" height="425" />
+
+
 
 
 
