@@ -33,8 +33,9 @@ Transformation
 ## Optimization 
 <img src="Screenshots/portfolio.png" width="700" height="425" />
 
-Optimization uses the minimum acceptable return of the SP500TR index for the 2016-2020 time period. 
+Optimization uses the minimum acceptable return of the SP500TR index for the 2016-2020 time period. Model reflects "shorts" with a negative weight (ex. AAPL, ADBE, ADP, and AMD) and those that have the highest fluctuations are the lower values. Largest portions of optimized portfolio are stable, low-risk leading companies (ex. PG, PGR, AMZN, and PEP) that provide reliable returns throughout the year. 
 
+The sum of portfolio ticker weights are always equal to 1. 
 
 
 
