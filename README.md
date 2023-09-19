@@ -1,4 +1,4 @@
-# Mean-Variance Portfolio Optimization for SP500 stocks
+# Mean-Variance Portfolio Optimization with SP500 stocks
 <img src="Screenshots/stocks_image.png" width="650" height="375" />
 
 
