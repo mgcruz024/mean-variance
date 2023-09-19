@@ -1,7 +1,9 @@
 # Mean-Variance Portfolio Optimization for SP500 stocks
 <img src="Screenshots/stocks_image.png" width="500" height="400" />
 
-Mean-Variance (MV) portfolio optimization with six years of daily SP500 data from 2016-2020 and Q1 2021 for testing. Analysis done on R using extracted Yahoo finance data stored in PostgreSQL.
+Mean-Variance (MV) portfolio optimization with six years of daily SP500 data from 2016-2020 and Q1 2021 for testing. Project aims to perform asset allocation considering a group of stock tickers and find an optimal portfolio for the target investor.
+
+Analysis done on R using extracted Yahoo finance data stored in PostgreSQL.
 
 ## ELT
 
@@ -26,3 +28,7 @@ SQL
 R
 - PortfolioAnalytics
 - ggplot2
+- RPostgres
+- DBI
+- reshape2
+- zoo
