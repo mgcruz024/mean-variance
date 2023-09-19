@@ -37,6 +37,7 @@ Optimization uses the minimum acceptable return of the SP500TR index for the 201
 
 The sum of portfolio ticker weights is always equal to 1. 
 
+## Evaluation
 <img src="Screenshots/annualized_returns.png" width="400" height="200" />
 
 Annualized stats are used to compare the portfolio against the SP500TR index. In this example of Q1 2021, low annualized Sharpe ratios will reveal a volatile, non-diversified portfolio. Statistics within the range 
