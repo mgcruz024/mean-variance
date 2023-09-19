@@ -7,7 +7,7 @@ require(DBI)
 conn <- dbConnect(RPostgres::Postgres()
                  ,user="user"
                  ,password="password"
-                 ,host="localhost"
+                 ,host="local_host"
                  ,port= local_port
                  ,dbname="db"
 )
