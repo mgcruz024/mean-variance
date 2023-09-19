@@ -1,17 +1,9 @@
 # Mean-Variance Portfolio Optimization for SP500 stocks (2016-2021)
 <img src="Screenshots/stocks_image.png" width="650" height="400" />
 
-Mean-Variance (MV) portfolio optimization with six years of daily SP500 data from 2016-2020 and Q1 2021 for testing.
+Mean-Variance (MV) portfolio optimization with six years of daily SP500 data from 2016-2020 and Q1 2021 for testing. Analysis done on R using extracted Yahoo finance data stored in PostgreSQL.
 
-
-
-
-
-
-
-
-
-## ETL 
+## ELT
 
 <img src="Screenshots/etl_process.png" width="1010" height="400" />
 
@@ -23,8 +15,14 @@ To initialize the ETL, I utilized three different data sets from a database I cr
 ## Optimization 
 Optimization uses the minimum acceptable return of the SP500TR index for the 2016-2020 time period. 
 
+
+
+
+
+
 ## Packages Used
 SQL
 
 R
 - PortfolioAnalytics
+- ggplot2
