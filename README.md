@@ -4,6 +4,19 @@
 
 Mean-Variance (MV) portfolio optimization with six years of daily SP500 data from 2016-2020 and Q1 2021 for testing. The project aims to perform asset allocation considering a group of stock tickers and find an optimal portfolio for the target investor. In order to select the best combination of those tickers, we need to perform analysis on R using extracted Yahoo finance data stored in PostgreSQL. 
 
+## Packages Used
+PostgreSQL 14
+- SQL
+  
+R 4.3.0
+- PortfolioAnalytics
+- ggplot2
+- RPostgres
+- DBI
+- reshape2
+- zoo
+
+
 ## ELT
 
 <img src="Screenshots/etl_process.png" width="800" height="400" />
@@ -21,14 +34,4 @@ Optimization uses the minimum acceptable return of the SP500TR index for the 201
 
 
 
-## Packages Used
-PostgreSQL 14
-- SQL
-  
-R 4.3.0
-- PortfolioAnalytics
-- ggplot2
-- RPostgres
-- DBI
-- reshape2
-- zoo
+
