@@ -17,7 +17,7 @@ R 4.3.0
 - zoo
 
 
-## ELT
+## ETL
 
 <img src="Screenshots/etl_process.png" width="800" height="400" />
 
