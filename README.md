@@ -25,6 +25,7 @@ Optimization uses the minimum acceptable return of the SP500TR index for the 201
 ## Packages Used
 PostgreSQL14
 - SQL
+  
 R 4.3.0
 - PortfolioAnalytics
 - ggplot2
