@@ -21,7 +21,7 @@ R 4.3.0
 
 <img src="Screenshots/etl_process.png" width="800" height="400" />
 
-ETL initialized using three different datasets from PostgreSQL:
+ETL initialized using three different datasets from a PostgreSQL stocks database:
 - custom_calendar_2016_2021- trading calendar; contains a previous trading day column for calculating daily returns.
 - daily_prices_2016_2021- SP500 end of day quotes.
 - eod_indices_2016_2021- SP500TR end of day quotes.
