@@ -46,6 +46,7 @@ Annualized stats are used to compare the portfolio against the SP500TR index. In
 
 ## Notes
 Personal DB credentials omitted in code.
+Data retrieved from https://finance.yahoo.com/
 
 
 
