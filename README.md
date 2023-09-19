@@ -2,7 +2,7 @@
 <img src="Screenshots/stocks_image.png" width="650" height="375" />
 
 
-Mean-Variance (MV) portfolio optimization with six years of daily Yahoo Finance SP500 data from 2016-2021 (Q1 2021 for testing). The project aims to perform asset allocation considering a group of stock tickers and find an optimal portfolio for the target investor. I used PortfolioAnalytics on R with extracted datasets stored in PostgreSQL for selecting the best weight distribution of the portfolio.
+Mean-Variance (MV) portfolio optimization with six years of daily Yahoo Finance SP500 and SP500TR data from 2016-2021 (Q1 2021 for testing). The project aims to perform asset allocation considering a group of stock tickers and find an optimal portfolio for the target investor. Utilized PortfolioAnalytics on R with extracted datasets stored in PostgreSQL for selecting the best weight distribution of the selected tickers. Portfolio tested against the SP500TR index to evaluate 2021 performance. 
 
 ## Packages Used
 PostgreSQL 14
@@ -21,10 +21,11 @@ R 4.3.0
 
 <img src="Screenshots/etl_process.png" width="800" height="400" />
 
-To initialize the ETL, I utilized three different data sets from a database I created on PostgreSQL. 
-- Custom calendar to reflect the trading days on NYSE for the desired date range, 01/01/2021-03/26/2021. Generated an additional column creating previous trading date for daily return calculations.
-- 
-. For the first data set regarding the custom calendar, we created a custom calendar to analyze the desired date range, 01/01/2021-03/26/2021. Accounting for holidays when banks were closed and not trading, the value of trading day results on any holidays coded to zero. The data needed to upload to a custom_calendar table linked to the stockmarket_gp database and one more customized column for the previous trading date. For the second data set regarding eod_quotes, the data needed to upload to an eod_quotes table in the stockmarket_gp database. For the third and final data set regarding eod_indices, a .csv file to upload to an eod_indices table in the stockmarket_gp database originating from Yahoo finance indices data in the desired date range.
+ETL initialized using three different datasets from PostgreSQL:
+- custom_calendar_2016_2021- trading calendar; contains a previous trading day column for calculating daily returns.
+- daily_prices_2016_2021- SP500 end of day quotes.
+- eod_indices_2016_2021- SP500TR end of day quotes.
+
 
 ## Optimization 
 <img src="Screenshots/portfolio.png" width="700" height="425" />
