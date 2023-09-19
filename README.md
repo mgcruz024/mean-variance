@@ -13,7 +13,7 @@ Mean-Variance (MV) portfolio optimization with five years of daily data from 201
 
 ## ETL 
 
-<img src="Screenshots/etl_process.png" width="1010" height="292" />
+<img src="Screenshots/etl_process.png" width="1010" height="400" />
 
 To initialize the ETL, I utilized three different data sets from a database I created on PostgreSQL. 
 - Custom calendar to reflect the trading days on NYSE for the desired date range, 01/01/2021-03/26/2021. Generated an additional column creating previous trading date for daily return calculations.
