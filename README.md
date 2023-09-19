@@ -2,7 +2,7 @@
 <img src="Screenshots/stocks_image.png" width="650" height="375" />
 
 
-Mean-Variance (MV) portfolio optimization with six years of daily Yahoo Finance SP500 and SP500TR data from 2016-2021 (Q1 2021 for testing). The project aims to perform asset allocation considering a group of stock tickers and find an optimal portfolio for the target investor. Utilized PortfolioAnalytics on R with extracted datasets stored in PostgreSQL for selecting the best weight distribution of the selected tickers. Portfolio tested against the SP500TR index to evaluate 2021 performance. 
+Mean-Variance portfolio optimization with six years of daily Yahoo Finance SP500 and SP500TR data from 2016-2021 (Q1 2021 for testing). The project aims to perform asset allocation considering a group of stock tickers and find an optimal portfolio for the target investor. Utilized PortfolioAnalytics on R with extracted datasets stored in PostgreSQL for selecting the best weight distribution of the selected tickers. Portfolio tested against the SP500TR index to evaluate 2021 performance. 
 
 ## Packages Used
 PostgreSQL 14
