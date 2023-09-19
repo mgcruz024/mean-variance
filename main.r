@@ -5,11 +5,11 @@ rm(list=ls(all=T)) # this just removes everything from memory
 require(RPostgres) 
 require(DBI)
 conn <- dbConnect(RPostgres::Postgres()
-                 ,user="stockmarketreader"
-                 ,password="read123"
+                 ,user="user"
+                 ,password="password"
                  ,host="localhost"
-                 ,port=5432
-                 ,dbname="mvportfolio"
+                 ,port= local_port
+                 ,dbname="db"
 )
 
 #custom calendar
