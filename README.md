@@ -1,8 +1,9 @@
 # Mean-Variance Portfolio Optimization with SP500 stocks
 <img src="Screenshots/stocks_image.png" width="650" height="375" />
 
-
-Mean-Variance portfolio optimization with six years of daily Yahoo Finance SP500 and SP500TR data from 2016-2021 (Q1 2021 for testing). The project aims to perform asset allocation considering a group of stock tickers and find an optimal portfolio for the target investor. Portfolio tested against the SP500TR index to evaluate 2021 performance and provide risk assessment.
+Mean-Variance portfolio optimization with six years of daily [Yahoo Finance](https://finance.yahoo.com/) SP500 and SP500TR data from 2016-2021 (Q1 2021 for testing). 
+The project aims to perform asset allocation considering a group of stock tickers and find an optimal portfolio for the target investor. Portfolio tested against 
+the SP500TR index to evaluate 2021 performance and provide risk assessment.
 
 Utilized PortfolioAnalytics on R with extracted datasets stored in PostgreSQL for selecting the best weight distribution of the selected tickers. 
 
@@ -35,14 +36,18 @@ Transformation
 ## Optimization 
 <img src="Screenshots/portfolio.png" width="700" height="425" />
 
-Optimization uses the minimum acceptable return of the SP500TR index for the 2016-2020 time period. The model reflects "shorts" with a negative weight (e.g., AAPL, ADBE, ADP, and AMD), and those that have the highest fluctuations are the lower values. The largest portions of the optimized portfolio are stable, low-risk leading companies (e.g., PG, PGR, AMZN, and PEP) that provide reliable returns throughout the year. 
+Optimization uses the minimum acceptable return of the SP500TR index for the 2016-2020 time period. The model reflects "shorts" with a negative 
+weight (e.g., AAPL, ADBE, ADP, and AMD), and those that have the highest fluctuations are the lower values. The largest portions of the optimized 
+portfolio are stable, low-risk leading companies (e.g., PG, PGR, AMZN, and PEP) that provide reliable returns throughout the year. 
 
 The sum of portfolio ticker weights is always equal to 1. 
 
 ## Evaluation
 <img src="Screenshots/annualized_returns.png" width="450" height="200" />
 
-Annualized stats are used to compare the portfolio against the SP500TR index. In this example of Q1 2021 (above stocks), low annualized Sharpe ratios will reveal a volatile, non-diversified portfolio. Statistics within the range of the index provide a good measure for the highest possible returns with low-risk investments. 
+Annualized stats are used to compare the portfolio against the SP500TR index. In this example of Q1 2021 (above stocks), low annualized Sharpe 
+ratios will reveal a volatile, non-diversified portfolio. Statistics within the range of the index provide a good measure for the highest possible 
+returns with low-risk investments. 
 
 ## Notes
 Personal DB credentials omitted in code.
