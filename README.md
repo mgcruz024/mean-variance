@@ -1,9 +1,9 @@
 # Mean-Variance Portfolio Optimization with SP500 stocks
 <img src="Screenshots/stocks_image.png" width="650" height="375" />
 
-Mean-Variance portfolio optimization with six years of daily [Yahoo Finance](https://finance.yahoo.com/) SP500 and SP500TR data from 2016-2021 (18+ million rows). 
-The project aims to perform asset allocation considering a group of stock tickers and find an optimal portfolio for the target investor. Portfolio tested against 
-the SP500TR index to evaluate 2021 performance and provide risk assessment.
+Mean-Variance portfolio optimization with six years of daily [Yahoo Finance](https://finance.yahoo.com/) SP500 and SP500TR end-of-day quotes from 
+2016-2021 (18+ million rows). The project aims to perform asset allocation considering a group of stock tickers and find an optimal portfolio for 
+he target investor. Portfolio tested against the SP500TR index to evaluate 2021 performance and provide risk assessment.
 
 Utilized PortfolioAnalytics on R with extracted datasets stored in PostgreSQL for selecting the best weight distribution of the selected tickers. 
 
@@ -26,8 +26,8 @@ R 4.3.0
 
 ETL initialized using three different datasets from a PostgreSQL stocks database:
 - custom calendar - trading calendar; contains a previous trading day column for calculating daily returns.
-- daily prices - SP500 end of day quotes.
-- eod indices - SP500TR end of day quotes.
+- daily prices - SP500 end-of-day quotes.
+- eod indices - SP500TR end-of-day quotes.
 
 Transformation
 - Percentage of completeness (>= 99%) and outlier removal (daily return > 100%) enforced to assure data quality. 
