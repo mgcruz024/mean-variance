@@ -1,7 +1,7 @@
 # Mean-Variance Portfolio Optimization with SP500 stocks
 <img src="Screenshots/stocks_image.png" width="650" height="375" />
 
-Mean-Variance portfolio optimization with six years of daily [Yahoo Finance](https://finance.yahoo.com/) SP500 and SP500TR end-of-day quotes from 
+Mean-Variance portfolio optimization with six years of [Yahoo Finance](https://finance.yahoo.com/) SP500 and SP500TR end-of-day quotes from 
 2016-2021 (18+ million rows). The project aims to perform asset allocation considering a group of stock tickers and find an optimal portfolio for 
 he target investor. Portfolio tested against the SP500TR index to evaluate 2021 performance and provide risk assessment.
 
